@@ -19,7 +19,7 @@ phases:
       - echo Entered the build phase...
       #- docker-compose run test python test_addition.py
       #- docker-compose run test python -m pytest -v
-      - pytest -q test_addition.py
+      - pytest -q -s
       #- zip -r static.zip .
   post_build:
     commands:
